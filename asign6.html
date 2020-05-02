@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>regular expression</title>
+    <script>
+        function validate() {
+            var username = document.getElementById("uname").value;
+            var regx = /pranati/i;
+            if (regx.test(username)) {
+                alert("valaid username");
+            } else {
+                alert("invalaid username");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="message.html">
+        <input id="uname" placeholder="username" type="text" />
+        <button onclick="validate()" type="button">submit</button>
+    </form>
+</body>
+
+</html>
